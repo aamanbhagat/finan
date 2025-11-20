@@ -4,7 +4,7 @@ pubDatetime: 2025-11-20T11:45:00Z
 modDatetime: 2025-11-20T11:45:00Z
 title: How to Build Wealth & Achieve Financial Independence - Complete Roadmap
 slug: build-wealth-financial-independence
-featured: false
+featured: true
 draft: false
 tags:
   - Wealth Building

@@ -4,7 +4,7 @@ pubDatetime: 2025-11-20T13:20:00Z
 modDatetime: 2025-11-20T13:20:00Z
 title: Cryptocurrency Investing Guide - Bitcoin, Ethereum & Altcoins Explained
 slug: cryptocurrency-investing-guide-crypto
-featured: false
+featured: true
 draft: false
 tags:
   - Cryptocurrency
