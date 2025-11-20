@@ -1,37 +1,36 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "About FinanceCity"
 ---
 
-financecity is a comprehensive finance platform delivering real-time market analysis, investment insights, and economic news to help you navigate the financial world.
+# About FinanceCity
 
-![financecity](public/astropaper-og.jpg)
+FinanceCity is your trusted financial education platform dedicated to helping individuals and investors make informed financial decisions. We provide comprehensive guides, expert analysis, and actionable strategies across all major investment categories.
 
-financecity provides expert financial content covering stocks, bonds, cryptocurrencies, personal finance, and global economic trends\_ all in one accessible platform.
+## Our Mission
 
-Our articles and analysis help investors, traders, and finance enthusiasts make informed decisions in today's dynamic financial markets.
+We believe everyone deserves access to quality financial education. FinanceCity simplifies complex financial concepts and provides practical, actionable advice to help you build wealth, optimize your investments, and achieve financial independence.
 
-## Features
+## What We Cover
 
-financecity comes with a set of useful features that make financial content accessible and engaging:
+Our expert content includes:
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+- **Stock Market Investing** - Learn fundamentals, analysis techniques, and proven investment strategies
+- **Personal Finance & Budgeting** - Master budgeting methods, savings strategies, and expense optimization
+- **Wealth Building** - Discover proven paths to financial independence and long-term wealth creation
+- **Cryptocurrency Investing** - Understand blockchain, Bitcoin, Ethereum, and crypto investment strategies
+- **Investment Strategies** - Explore diversification, portfolio management, and risk optimization
 
-and so much more.
+## Why Trust FinanceCity?
 
-## Show your support
+- **Expert Insights** - Content created with financial expertise and research
+- **Actionable Advice** - Practical strategies you can implement immediately
+- **Comprehensive Coverage** - From basics to advanced investment concepts
+- **Up-to-Date Content** - Regular updates reflecting current market trends and economic shifts
+- **Accessible Learning** - Complex financial topics explained in simple, understandable language
 
-If you like financecity, consider giving it a star ⭐️.
+## Get Started
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an issue, submit a pull request or start a discussion.
+Explore our blog posts to begin your journey toward financial literacy and independence. Whether you're a beginner investor or experienced trader, FinanceCity has resources for every financial goal.
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Join thousands of readers building smarter financial futures with FinanceCity.
