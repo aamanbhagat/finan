@@ -1,0 +1,46 @@
+---
+// Optimized Google AdSense ad placement component with multiple unit support
+interface Props {
+  slot?: string;
+  format?: "auto" | "rectangle" | "horizontal" | "vertical" | "autorelaxed";
+  responsive?: boolean;
+  type?: "display" | "article" | "feed" | "multiplex";
+}
+
+const {
+  slot = "1134908297", // Default to Display Ad #1
+  format = "auto",
+  responsive = true,
+  type = "display",
+} = Astro.props;
+---
+
+<div class="adsense-container" data-ad-type={type}>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1720101320139769"
+       crossorigin="anonymous"></script>
+  <ins
+    class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-1720101320139769"
+    data-ad-slot={slot}
+    data-ad-format={format}
+    data-full-width-responsive={responsive}
+  ></ins>
+  <script is:inline>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<style>
+  .adsense-container {
+    margin: 2rem 0;
+    min-height: 250px;
+    text-align: center;
+  }
+  
+  .adsense-container[data-ad-type="multiplex"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+</style>
