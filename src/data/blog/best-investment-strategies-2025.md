@@ -20,6 +20,8 @@ description: Discover proven investment strategies for 2025. Learn portfolio div
 
 In 2025, the investment landscape continues to evolve with changing market conditions, inflation rates, and economic policies. Whether you're a beginner starting your investment journey or an experienced investor looking to optimize your portfolio, having the right strategy is crucial for long-term financial success.
 
+![Investment Strategy Dashboard](/assets/blog-images/investment-strategies.jpg "Investment portfolio strategies and planning")
+
 This comprehensive guide explores evidence-based investment strategies that can help you build wealth, manage risks, and achieve your financial goals in 2025.
 
 ## 1. Diversification: The Foundation of Smart Investing

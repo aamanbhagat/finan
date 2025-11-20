@@ -21,6 +21,8 @@ description: Complete guide to cryptocurrency investing. Learn about Bitcoin, Et
 
 Cryptocurrency is digital currency secured by cryptography, operating on decentralized networks called blockchain. Unlike traditional currency controlled by governments, cryptocurrencies are decentralized and transparent.
 
+![Cryptocurrency Trading](/assets/blog-images/cryptocurrency-guide.jpg "Bitcoin, blockchain and digital cryptocurrency investments")
+
 ### What Makes Crypto Different
 
 **Traditional Currency**:

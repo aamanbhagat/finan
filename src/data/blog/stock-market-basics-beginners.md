@@ -20,6 +20,8 @@ description: Learn stock market fundamentals for beginners. Master how stocks wo
 
 The stock market is a platform where shares of publicly-traded companies are bought and sold. It represents ownership stakes in businesses and serves as a crucial mechanism for companies to raise capital and for investors to build wealth.
 
+![Stock Market Trading Floor](/assets/blog-images/stock-market-basics.jpg "Stock market exchange and trading activity")
+
 ### Key Definition
 A **stock** (or share) is a unit of ownership in a company. When you buy a stock, you become a partial owner of that company and are entitled to a proportionate share of its profits.
 
