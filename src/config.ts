@@ -3,7 +3,7 @@ export const SITE = {
   author: "Sat Naing",
   profile: "https://satnaing.dev/",
   desc: "Your trusted source for financial news, market analysis, and investment insights.",
-  title: "FinanceCity - Financial News, Market Analysis & Investment Insights",
+  title: "FinanceCity",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
