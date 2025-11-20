@@ -9,8 +9,12 @@ const blog = defineCollection({
   schema: ({ image }) =>
     z.object({
       author: z.string().default(SITE.author),
-      pubDatetime: z.string().pipe(z.coerce.date()),
-      modDatetime: z.string().pipe(z.coerce.date()).optional().nullable(),
+      pubDatetime: z.union([z.string(), z.date()]).transform((val) => 
+        typeof val === 'string' ? new Date(val) : val
+      ),
+      modDatetime: z.union([z.string(), z.date()]).transform((val) => 
+        typeof val === 'string' ? new Date(val) : val
+      ).optional().nullable(),
       title: z.string(),
       featured: z.boolean().optional(),
       draft: z.boolean().optional(),
