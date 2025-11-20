@@ -16,20 +16,59 @@ const {
 ---
 
 <div class="adsense-container" data-ad-type={type}>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1720101320139769"
-       crossorigin="anonymous"></script>
   <ins
     class="adsbygoogle"
     style="display:block"
     data-ad-client="ca-pub-1720101320139769"
     data-ad-slot={slot}
     data-ad-format={format}
-    data-full-width-responsive={responsive}
+    data-full-width-responsive={responsive ? "true" : "false"}
   ></ins>
-  <script is:inline>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
 </div>
+
+<script>
+  function initAds() {
+    try {
+      const ads = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+      if (ads.length > 0 && (window as any).adsbygoogle) {
+        ((window as any).adsbygoogle).push({});
+      }
+    } catch (e) {
+      console.error('AdSense initialization error:', e);
+    }
+  }
+
+  // Initialize ads on page load and transitions
+  document.addEventListener('astro:page-load', () => {
+    setTimeout(initAds, 100);
+  });
+  
+  // Initial page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(initAds, 100);
+    });
+  } else {
+    setTimeout(initAds, 100);
+  }
+  
+  // Also watch for new ads being added
+  const observer = new MutationObserver((mutations) => {
+    const hasNewAds = mutations.some(mutation => 
+      Array.from(mutation.addedNodes).some((node: any) => 
+        node.classList?.contains('adsbygoogle') || 
+        (node.querySelector && node.querySelector('.adsbygoogle'))
+      )
+    );
+    if (hasNewAds) {
+      setTimeout(initAds, 100);
+    }
+  });
+  
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  }
+</script>
 
 <style>
   .adsense-container {
@@ -39,8 +78,10 @@ const {
   }
   
   .adsense-container[data-ad-type="multiplex"] {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    min-height: 400px;
+  }
+  
+  .adsbygoogle {
+    display: block;
   }
 </style>
