@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-20T10:30:00Z
-modDatetime: 2025-11-20T10:30:00Z
+pubDatetime: 2025-11-20T00:01:00Z
+modDatetime: 2025-11-20T00:01:00Z
 title: Stock Market Basics for Beginners - How to Invest & Profit from Stocks
 slug: stock-market-basics-beginners
 featured: true

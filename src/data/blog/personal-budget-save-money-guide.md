@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-20T14:15:00Z
-modDatetime: 2025-11-20T14:15:00Z
+pubDatetime: 2025-11-20T00:02:00Z
+modDatetime: 2025-11-20T00:02:00Z
 title: How to Create a Personal Budget & Save Money - Complete Financial Planning Guide
 slug: personal-budget-save-money-guide
 featured: true

@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-20T11:45:00Z
-modDatetime: 2025-11-20T11:45:00Z
+pubDatetime: 2025-11-20T00:03:00Z
+modDatetime: 2025-11-20T00:03:00Z
 title: How to Build Wealth & Achieve Financial Independence - Complete Roadmap
 slug: build-wealth-financial-independence
 featured: true
