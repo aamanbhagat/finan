@@ -1,3 +1,4 @@
+// Updated Nov 21, 2025 - All 20 blog posts configured for display
 export const SITE = {
   website: "https://financecity.me/", // replace this with your deployed domain
   author: "FinanceCity",
