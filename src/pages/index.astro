@@ -6,14 +6,14 @@ import Card from "@/components/Card.astro";
 import { SITE } from "@/config";
 import getSortedPosts from "@/utils/getSortedPosts";
 
-const sortedPosts = await getSortedPosts(await getCollection("blog"));
+const sortedPosts = getSortedPosts(await getCollection("blog"));
 
 const posts = sortedPosts.slice(0, SITE.postPerIndex);
 ---
 <Layout title={SITE.title}>
   <Main pageTitle="All Posts" pageDesc="All articles and posts.">
     <ul>
-      {posts.map((post: CollectionEntry<"blog">) => <Card href={`/posts/${post.slug}/`} frontmatter={post.data} />)}
+      {posts.map((post: CollectionEntry<"blog">) => <Card {...post} />)}
     </ul>
   </Main>
   {
