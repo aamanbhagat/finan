@@ -1,28 +1,109 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
-import Main from "@/layouts/Main.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Socials from "@/components/Socials.astro";
+import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
-import { SITE } from "@/config";
+import Hr from "@/components/Hr.astro";
+import AdSense from "@/components/AdSense.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
+import IconRss from "@/assets/icons/IconRss.svg";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import { SITE } from "@/config";
+import { SOCIALS } from "@/constants";
 
-const sortedPosts = getSortedPosts(await getCollection("blog"));
+const posts = await getCollection("blog");
 
-const posts = sortedPosts.slice(0, SITE.postPerIndex);
+const sortedPosts = getSortedPosts(posts);
+const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 ---
-<Layout title={SITE.title}>
-  <Main pageTitle="All Posts" pageDesc="All articles and posts.">
-    <ul>
-      {posts.map((post: CollectionEntry<"blog">) => <Card {...post} />)}
-    </ul>
-  </Main>
-  {
-    SITE.postPerIndex < sortedPosts.length && (
-      <footer class="flex justify-center">
-        <a href="/posts">
-          <button class="btn-primary">View All Posts</button>
-        </a>
-      </footer>
-    )
-  }
+
+<Layout>
+  <Header />
+  <main id="main-content" data-layout="index">
+    <section id="hero" class="pt-8 pb-6">
+      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
+        Welcome to FinanceCity
+      </h1>
+
+      <!-- Tagline -->
+      <p class="my-2 text-sm font-medium text-accent/70 sm:text-base">
+        📈 Smart Financial Insights
+      </p>
+
+      <a
+        target="_blank"
+        href="/rss.xml"
+        class="inline-block"
+        aria-label="rss feed"
+        title="RSS Feed"
+      >
+        <IconRss
+          width={20}
+          height={20}
+          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
+        />
+        <span class="sr-only">RSS Feed</span>
+      </a>
+
+      <p>
+        FinanceCity is your trusted destination for financial education and investment insights. Explore expert articles on stock market investing, portfolio diversification, personal budgeting, wealth building strategies, and cryptocurrency investing. Make informed financial decisions backed by proven strategies and market analysis.
+      </p>
+      <p class="mt-2">
+        Discover actionable financial advice to grow your wealth, optimize your investments, and achieve long-term financial independence.
+      </p>
+      {
+        // only display if at least one social link is enabled
+        SOCIALS.length > 0 && (
+          <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <Socials />
+          </div>
+        )
+      }
+    </section>
+
+    <Hr />
+
+    <!-- Display Ad #2 - Homepage Banner -->
+    <AdSense slot="3186356565" format="auto" responsive={true} type="display" />
+
+    <Hr />
+
+    {
+      sortedPosts.length > 0 && (
+        <>
+          <section id="featured" class="pt-12 pb-6">
+            <h2 class="text-2xl font-semibold tracking-wide">All Posts</h2>
+            <ul>
+              {sortedPosts.map(data => (
+                <Card variant="h3" {...data} />
+              ))}
+            </ul>
+          </section>
+        </>
+      )
+    }
+
+    <div class="my-8 text-center">
+      <LinkButton href="/posts/">
+        View All Posts
+        <IconArrowRight class="inline-block rtl:-rotate-180" />
+      </LinkButton>
+    </div>
+  </main>
+  <Footer />
 </Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+      ?.dataset?.layout;
+    if (indexLayout) {
+      sessionStorage.setItem("backUrl", "/");
+    }
+  });
+</script>
