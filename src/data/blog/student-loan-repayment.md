@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:03:00Z
-modDatetime: 2025-11-22T00:03:00Z
+pubDatetime: 2025-11-21T00:13:00Z
+modDatetime: 2025-11-21T00:13:00Z
 title: Student Loan Repayment Strategies Complete Guide
 slug: student-loan-repayment-strategies-guide
 featured: true

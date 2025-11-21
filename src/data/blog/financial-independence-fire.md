@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:09:00Z
-modDatetime: 2025-11-22T00:09:00Z
+pubDatetime: 2025-11-21T00:19:00Z
+modDatetime: 2025-11-21T00:19:00Z
 title: Financial Independence FIRE Movement Guide
 slug: financial-independence-fire-movement
 featured: true

@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:07:00Z
-modDatetime: 2025-11-22T00:07:00Z
+pubDatetime: 2025-11-21T00:17:00Z
+modDatetime: 2025-11-21T00:17:00Z
 title: Stock Market Investing Beginners Complete Guide
 slug: stock-market-investing-beginners
 featured: true

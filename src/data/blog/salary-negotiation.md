@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:05:00Z
-modDatetime: 2025-11-22T00:05:00Z
+pubDatetime: 2025-11-21T00:15:00Z
+modDatetime: 2025-11-21T00:15:00Z
 title: Negotiation Salary Increase Career Growth Tips
 slug: negotiate-salary-career-growth
 featured: true

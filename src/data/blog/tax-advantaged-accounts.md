@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:04:00Z
-modDatetime: 2025-11-22T00:04:00Z
+pubDatetime: 2025-11-21T00:14:00Z
+modDatetime: 2025-11-21T00:14:00Z
 title: Tax-Advantaged Investing 401k IRA HSA Guide
 slug: tax-advantaged-accounts-guide
 featured: true

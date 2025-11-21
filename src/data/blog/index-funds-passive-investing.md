@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:00:00Z
-modDatetime: 2025-11-22T00:00:00Z
+pubDatetime: 2025-11-21T00:10:00Z
+modDatetime: 2025-11-21T00:10:00Z
 title: Index Funds and Passive Investing Strategy Guide
 slug: index-funds-passive-investing-strategy
 featured: true

@@ -1,7 +1,7 @@
 ---
 author: FinanceCity
-pubDatetime: 2025-11-22T00:01:00Z
-modDatetime: 2025-11-22T00:01:00Z
+pubDatetime: 2025-11-21T00:11:00Z
+modDatetime: 2025-11-21T00:11:00Z
 title: Emergency Fund Guide How to Build Financial Security
 slug: emergency-fund-build-financial-security
 featured: true
